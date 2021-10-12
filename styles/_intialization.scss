@@ -7,7 +7,7 @@ $offwhite-color: #d3d3d3;
 $primary-font-family: 'Lato', sans-serif;
 $heading-font-family: 'COCOGOOSE', sans-serif;
 
-@mixin underlineLength($length: '30%',$height: '1px') {
+@mixin underlineLength($length: '30%',$height: 1px) {
   &::after {
     content: '';
     height: $height;

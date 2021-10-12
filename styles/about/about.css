@@ -77,68 +77,15 @@ h5 {
   color: #6f23ff;
 }
 
-.alumni-opinion {
+footer {
+  background-color: #3e396b;
+  width: 100%;
   padding: 1rem;
-  border-top: #d3d3d3 1px solid;
-}
-
-.alumni-opinion h3 {
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  position: relative;
-}
-
-.alumni-opinion h3::after {
-  content: '';
-  height: 2px;
-  width: 20%;
-  position: absolute;
-  background-color: #ec5242;
-  bottom: -0.5em;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 footer p {
   color: #fff;
   margin-top: 1rem;
-}
-
-.alumni-opinion p {
-  margin: 1rem 0;
-  text-align: center;
-}
-
-.alumni-opinion .img-container {
-  position: relative;
-  margin: 1rem 1rem 2rem;
-}
-
-.alumni-opinion .img-container img {
-  width: 100%;
-}
-
-.alumni-opinion .img-container .img-overlay {
-  position: absolute;
-  background-color: rgba(62, 57, 107, 0.9);
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-}
-
-.alumni-opinion .img-container a {
-  color: white;
-  text-decoration: none;
 }
 
 .partner {
@@ -178,8 +125,61 @@ footer p {
   text-align: center;
 }
 
-footer {
-  background-color: #3e396b;
-  width: 100%;
+.alumni-opinion {
   padding: 1rem;
+  border-top: #d3d3d3 1px solid;
+}
+
+.alumni-opinion h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+
+.alumni-opinion h3::after {
+  content: '';
+  height: 2px;
+  width: 20%;
+  position: absolute;
+  background-color: #ec5242;
+  bottom: -0.5em;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.alumni-opinion p {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.alumni-opinion .img-container {
+  position: relative;
+  margin: 1rem 1rem 2rem;
+}
+
+.alumni-opinion .img-container img {
+  width: 100%;
+}
+
+.alumni-opinion .img-container .img-overlay {
+  position: absolute;
+  background-color: rgba(62, 57, 107, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.alumni-opinion .img-container a {
+  color: white;
+  text-decoration: none;
 }

@@ -30,6 +30,50 @@
   }
 }
 
+footer {
+  background-color: #3e396b;
+  width: 100%;
+  padding: 1rem;
+
+  p {
+    color: #fff;
+    margin-top: 1rem;
+  }
+}
+
+.partner {
+  background-color: #f8faff;
+  padding: 1rem;
+
+  h3 {
+    font-family: $primary-font-family;
+    font-size: 20px;
+    position: relative;
+    width: max-content;
+    margin: 0 auto;
+
+    @include underlineLength(60%,2px);
+
+    margin-bottom: 2rem;
+  }
+
+  img {
+    height: 40px;
+    margin: 0 8px 8px 0;
+
+    &:last-child {
+      height: 40px;
+      width: 140px;
+      margin: 0;
+    }
+  }
+
+  p {
+    color: #7880a6;
+    text-align: center;
+  }
+}
+
 .alumni-opinion {
   padding: 1rem;
   border-top: #d3d3d3 1px solid;
@@ -71,49 +115,5 @@
       color: white;
       text-decoration: none;
     }
-  }
-}
-
-.partner {
-  background-color: #f8faff;
-  padding: 1rem;
-
-  h3 {
-    font-family: $primary-font-family;
-    font-size: 20px;
-    position: relative;
-    width: max-content;
-    margin: 0 auto;
-
-    @include underlineLength(60%,2px);
-
-    margin-bottom: 2rem;
-  }
-
-  img {
-    height: 40px;
-    margin: 0 8px 8px 0;
-
-    &:last-child {
-      height: 40px;
-      width: 140px;
-      margin: 0;
-    }
-  }
-
-  p {
-    color: #7880a6;
-    text-align: center;
-  }
-}
-
-footer {
-  background-color: #3e396b;
-  width: 100%;
-  padding: 1rem;
-
-  p {
-    color: #fff;
-    margin-top: 1rem;
   }
 }
