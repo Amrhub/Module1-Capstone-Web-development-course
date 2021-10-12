@@ -36,7 +36,8 @@
     letter-spacing: 1px;
     position: relative;
 
-    @include underlineLength(30%); }
+    @include underlineLength(30%);
+  }
 }
 
 .main-program__container {

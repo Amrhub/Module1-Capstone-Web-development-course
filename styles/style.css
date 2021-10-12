@@ -1,13 +1,12 @@
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   color: #272a31;
 }
 
@@ -91,7 +90,7 @@ h5 {
   bottom: -0.5em;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .main-program__container {
@@ -101,14 +100,14 @@ h5 {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100vh;
 }
 
@@ -118,11 +117,11 @@ h5 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 18%;
   padding: 1rem;
@@ -131,7 +130,7 @@ h5 {
 .main-program__container .card img {
   width: 30px;
   -ms-flex-preferred-size: auto;
-  flex-basis: auto;
+      flex-basis: auto;
 }
 
 .main-program__container .card > * {
@@ -143,16 +142,16 @@ h5 {
   font-family: "COCOGOOSE", sans-serif;
   text-align: center;
   -ms-flex-preferred-size: 110px;
-  flex-basis: 110px;
+      flex-basis: 110px;
   -webkit-box-flex: 2;
-  -ms-flex-positive: 2;
-  flex-grow: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
 }
 
 .main-program__container .card .card-description {
   color: white;
   -ms-flex-preferred-size: 140px;
-  flex-basis: 140px;
+      flex-basis: 140px;
 }
 
 .main-program__container .join-btn {
@@ -164,3 +163,4 @@ h5 {
   padding: 1rem 2rem;
   margin-top: 1rem;
 }
+/*# sourceMappingURL=style.css.map */
