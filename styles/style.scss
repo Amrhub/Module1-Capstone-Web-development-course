@@ -1,0 +1,91 @@
+@import 'intialization';
+
+.introduction {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.introduction__header {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.introduction__description-container {
+  border: 4px solid white;
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.event-date {
+  color: #4b4b4b;
+  margin: 1rem 0;
+}
+
+.main-program {
+  background-color: rgb(39, 42, 49);
+  padding: 2rem 1rem 1rem;
+
+  h3 {
+    font-family: $primary-font-family;
+    width: max-content;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    position: relative;
+
+    @include underlineLength(30%); }
+}
+
+.main-program__container {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  .card {
+    background-color: rgba(59, 62, 69, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    padding: 1rem;
+
+    img {
+      width: 30px;
+      flex-basis: auto;
+    }
+
+    & > * {
+      margin: 0 3px;
+    }
+
+    .card-title {
+      color: $secondary-color;
+      font-family: $heading-font-family;
+      text-align: center;
+      flex-basis: 110px;
+      flex-grow: 2;
+    }
+
+    .card-description {
+      color: white;
+      flex-basis: 140px;
+    }
+  }
+
+  .join-btn {
+    text-decoration: none;
+    color: white;
+    background-color: $secondary-color;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+  }
+}
