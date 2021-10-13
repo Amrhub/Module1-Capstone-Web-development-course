@@ -100,6 +100,74 @@
   }
 }
 
+.staff {
+  padding: 1rem;
+  background-color: #fff;
+
+  .staff__headings {
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 4rem;
+
+    @include underlineLength(50px, 2px);
+  }
+
+  .staff-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .staff-container {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    gap: 1rem 2rem;
+
+    .staff-information {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  .staff-introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .staff-name {
+      font-weight: normal;
+      font-size: 17px;
+      text-align: left;
+    }
+
+    .job-title {
+      text-transform: capitalize;
+      color: $secondary-color;
+      position: relative;
+      margin-bottom: 8px;
+
+      &::before {
+        content: '';
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        background-color: $offwhite-color;
+      }
+    }
+
+    .bio {
+      font-size: 16px;
+    }
+  }
+}
+
 .partner {
   display: none;
 }
@@ -131,26 +199,37 @@
 
     .card {
       flex-direction: column;
-      height: 10em;
+      height: 12em;
       justify-content: space-around;
       flex-grow: 1;
       margin-right: 8px;
       flex-basis: 100px;
 
       .card-title {
-        flex-basis: 70px;
-        line-height: 60px;
+        flex: 1 0 100px;
+        display: inline-flex;
+        align-items: center;
         text-align: center;
-        flex-grow: 0;
       }
 
       .card-description {
         text-align: center;
+        display: inline-flex;
+        align-items: center;
       }
     }
 
     .join-btn {
       display: none;
     }
+  }
+
+  .staff {
+    padding: 2rem 4rem;
+  }
+
+  .staff-container-wrapper.staff-container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }

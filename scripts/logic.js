@@ -3,7 +3,7 @@ const collapseList = document.querySelector('.collapse-list');
 const closeBtn = document.getElementById('close-btn');
 const collapseListLinks = Array.from(collapseList.querySelectorAll('a'));
 const desktopNavbarLinks = Array.from(
-  document.querySelectorAll('.desktop-navbar ul li')
+  document.querySelectorAll('.desktop-navbar ul li'),
 );
 
 hamburgerMenu.addEventListener('click', () => {

@@ -1,5 +1,6 @@
 @import url("http://fonts.cdnfonts.com/css/cocogoose");
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
 *,
 *::after,
 *::before {
@@ -174,6 +175,10 @@ footer .footer-description {
   margin-left: 32px;
 }
 
+footer .desktop-footer__img {
+  display: none;
+}
+
 @media screen and (min-width: 500px) {
   .collapse-list li {
     width: 50%;
@@ -186,15 +191,19 @@ footer .footer-description {
     top: 0;
     z-index: 1;
   }
+
   .hamburger-menu {
     display: none;
   }
+
   .desktop-navbar {
     display: grid;
   }
+
   .partner {
     display: block;
   }
+
   .partner div {
     display: flex;
     justify-content: space-around;
@@ -202,13 +211,20 @@ footer .footer-description {
     width: 80%;
     margin: 0 auto;
   }
+
   footer {
     display: flex;
     background-color: #272a31;
   }
-  footer img {
-    color: #ec5242;
+
+  footer .mobile-footer__img {
+    display: none;
   }
+
+  footer .desktop-footer__img {
+    display: inline-block;
+  }
+
   footer .footer-description {
     color: #d3d3d3;
   }
@@ -329,23 +345,99 @@ footer .footer-description {
   margin-top: 1rem;
 }
 
-.partner {
-  display: none;
+.staff {
+  padding: 1rem;
+  background-color: #fff;
+}
+
+.staff .staff__headings {
+  font-weight: normal;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+.staff .staff__headings::after {
+  content: '';
+  height: 2px;
+  width: 50px;
+  position: absolute;
+  background-color: #ec5242;
+  bottom: -0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.staff .staff-container-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.staff .staff-container {
+  display: grid;
+  grid-template-columns: 3fr 6fr;
+  gap: 1rem 2rem;
+}
+
+.staff .staff-container .staff-information {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.staff .staff-container .staff-information img {
+  width: 80%;
+}
+
+.staff .staff-introduction {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.staff .staff-introduction .staff-name {
+  font-weight: normal;
+  font-size: 17px;
+  text-align: left;
+}
+
+.staff .staff-introduction .job-title {
+  text-transform: capitalize;
+  color: #ec5242;
+  position: relative;
+  margin-bottom: 8px;
+}
+
+.staff .staff-introduction .job-title::before {
+  content: '';
+  height: 2px;
+  width: 30px;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  background-color: #d3d3d3;
+}
+
+.staff .staff-introduction .bio {
+  font-size: 16px;
 }
 
 @media screen and (min-width: 768px) {
   html {
     font-size: 30px;
   }
+
   .introduction {
     max-width: 800px;
     padding: 4rem 3rem;
   }
+
   .introduction h1 {
     font-size: 45px;
     line-height: 50px;
     font-weight: normal;
   }
+
   .main-program .main-program__container {
     flex-direction: row;
     height: 50vh;
@@ -353,25 +445,39 @@ footer .footer-description {
     margin: 0 auto;
     justify-content: space-around;
   }
+
   .main-program .card {
     flex-direction: column;
-    height: 10em;
+    height: 12em;
     justify-content: space-around;
     flex-grow: 1;
     margin-right: 8px;
     flex-basis: 100px;
   }
+
   .main-program .card .card-title {
-    flex-basis: 70px;
-    line-height: 60px;
+    flex: 1 0 100px;
+    display: inline-flex;
+    align-items: center;
     text-align: center;
-    flex-grow: 0;
   }
+
   .main-program .card .card-description {
     text-align: center;
+    display: inline-flex;
+    align-items: center;
   }
+
   .main-program .join-btn {
     display: none;
   }
+
+  .staff {
+    padding: 2rem 4rem;
+  }
+
+  .staff-container-wrapper.staff-container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
-/*# sourceMappingURL=style.css.map */

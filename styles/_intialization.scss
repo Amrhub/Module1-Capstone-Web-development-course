@@ -182,6 +182,10 @@ footer {
     text-align: left;
     margin-left: 32px;
   }
+
+  .desktop-footer__img {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 500px) {
@@ -223,8 +227,12 @@ footer {
     display: flex;
     background-color: $primary-color;
 
-    img {
-      color: $secondary-color;
+    .mobile-footer__img {
+      display: none;
+    }
+
+    .desktop-footer__img {
+      display: inline-block;
     }
 
     .footer-description {

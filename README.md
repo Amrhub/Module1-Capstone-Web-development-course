@@ -6,7 +6,7 @@
 
 ![screenshot](./app_screenshot.png)
 
-
+[Loom video](https://www.loom.com/share/6928b26eb1c84671b6c9c1ab2a36ccd8)
 
 ## Built With
 
@@ -14,7 +14,7 @@
 
 ## Live Demo
 
-[Portfolio Web Page](https://amrhub.github.io/Module1-Capstone-Web-development-course/)
+[Microverse program webpage](https://amrhub.github.io/Module1-Capstone-Web-development-course/)
 
 ## Getting Started
 

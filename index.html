@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./images/microverse.png" type="image/x-icon">
     <script defer src="scripts/logic.js"></script>
+    <script defer src="scripts/domManipulation.js"></script>
 </head>
 <body>
     <main class="container">
@@ -22,10 +23,10 @@
                         <a href="#" id="home-link">Home</a>
                     </li>
                     <li>
-                        <a href="/about.html" target="_blank" rel="noopener">About</a>
+                        <a href="about.html" target="_blank" rel="noopener">About</a>
                     </li>
                     <li>
-                        <a href="/index.html#main-program" target="_blank" rel="noopener">Program</a>
+                        <a href="#main-program">Program</a>
                     </li>
                 </ul>
             </nav>
@@ -38,10 +39,10 @@
                             <a href="#" class="active-tab">Home</a>
                         </li>
                         <li>
-                            <a href="/about.html">About</a>
+                            <a href="about.html">About</a>
                         </li>
                         <li>
-                            <a href="/index.html#main-program">Program</a>
+                            <a href="index.html#main-program">Program</a>
                         </li>
                         <li>
                             <a href="https://apply.microverse.org/" target="_blank" rel="noopener">Join</a>
@@ -98,6 +99,55 @@
             </div>
         </section>
 
+        <section class="staff">
+            <h2 class="staff__headings">
+                Microverse Staff
+            </h2>
+            <div class="staff-container-wrapper">
+                <!-- <div class="staff-container">
+                    <div class="staff-information">
+                        <img src="images/Ariel-Camus.png" alt="hwasd">
+                    </div>
+                    <div class="staff-introduction">
+                        <h4 class="staff-name">Ariel Camus</h4>
+                        <span class="job-title">CEO</span>
+                        <p class="bio">HERE</p>
+                    </div>
+                </div>
+                <div class="staff-container">
+                    <div class="staff-information">
+                        <img src="images/Ariel-Camus.png" alt="hwasd">
+                    </div>
+                    <div class="staff-introduction">
+                        <h4 class="staff-name">Ariel Camus</h4>
+                        <span class="job-title">CEO</span>
+                        <p class="bio">HERE</p>
+                    </div>
+                </div>
+                <div class="staff-container">
+                    <div class="staff-information">
+                        <img src="images/Ariel-Camus.png" alt="hwasd">
+                    </div>
+                    <div class="staff-introduction">
+                        <h4 class="staff-name">Ariel Camus</h4>
+                        <span class="job-title">CEO</span>
+                        <p class="bio">HERE</p>
+                    </div>
+                </div>
+                <div class="staff-container">
+                    <div class="staff-information">
+                        <img src="images/Ariel-Camus.png" alt="hwasd">
+                    </div>
+                    <div class="staff-introduction">
+                        <h4 class="staff-name">Ariel Camus</h4>
+                        <span class="job-title">CEO</span>
+                        <p class="bio">HERE</p>
+                    </div>
+                </div>
+                 -->
+            </div>
+        </section>
+
 
         <section class="partner">
             <h3>
@@ -117,7 +167,8 @@
             </p>
         </section>
         <footer>
-            <img src="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png" width="169" sizes="(max-width: 768px) 169px, 800px" srcset="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png 768w, https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30ae0c4081806a8f50a7df_horizontal-logo-white.png 2000w" alt="microverse logo" class="logo_footer">
+            <img src="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png" width="169" alt="microverse logo" class="logo_footer mobile-footer__img">
+            <img src="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png" width="169" sizes="(max-width: 768px) 169px, 800px" srcset="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png 768w, https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30ae0c4081806a8f50a7df_horizontal-logo-white.png 2000w" alt="microverse logo" class="logo_footer desktop-footer__img">
             <p class="footer-description">Talent is everywhere, but opportunity is not. Follow us on our journey to close the gap and connect one million people to remote jobs by 2030.</p>
         </footer>
     </main>
