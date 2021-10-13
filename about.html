@@ -7,12 +7,46 @@
     <title>About Microverse</title>
     <link rel="stylesheet" href="./styles/about/about.css">
     <link rel="shortcut icon" href="./images/microverse.png" type="image/x-icon">
+    <script defer src="scripts/logic.js"></script>
 </head>
 <body>
     <main class="container">
         <header class="container__header">
             <nav class="hamburger-menu">
-                <img src="images/hamburger-menu.png" alt="hamburger menu icon">
+                <img class="hamburger-img" src="images/hamburger-menu.png" alt="hamburger menu icon">
+                <ul class="collapse-list">
+                    <li>
+                        <img id="close-btn" class="close-sign" src="images/close.png" alt="close sign">
+                    </li>
+                    <li>
+                        <a href="/index.html" class="active-tab" target="_blank" rel="noopener">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" id="about-link">About</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#main-program" target="_blank" rel="noopener">Program</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="desktop-navbar">
+                <a href="/index.html">
+                    <img class="desktop-logo" src="images/microverselogo.png" alt="microverse logo">
+                </a>
+                    <ul>
+                        <li>
+                            <a href="/#">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about.html" class="active-tab">About</a>
+                        </li>
+                        <li>
+                            <a href="/index.html#main-program">Program</a>
+                        </li>
+                        <li>
+                            <a href="https://apply.microverse.org/" target="_blank" rel="noopener">Join</a>
+                        </li>
+                    </ul>
             </nav>
         </header>
 
@@ -36,25 +70,27 @@
             <h3>
                 What do alumni think of Microverse?
             </h3>
-            <p>
+            <p class="alumni-description">
                 Microverse accepted its first cohort in early 2018 and its first graduates started receiving job offers in September 2018. Here are some of their comments, reviews, and videos. 
             </p>
 
-            <div class="img-container">
-                <img src="images/canda.png" alt="Canada flag">
-                <div class="img-overlay">
-                    <a href="https://support.microverse.org/en/articles/2590022-what-do-alumni-think-of-microverse/#paul-rail-toronto-canada">
-                        Paul Rail (Toronto, Canada)
-                    </a>
-                </div>
-                </div>
-            <div class="img-container">
-                <img src="./images/serbia.png" alt="Serbia flag">
-                <div class="img-overlay">
-                    <a href="https://support.microverse.org/en/articles/2590022-what-do-alumni-think-of-microverse/#sava-vuckovic-nis-serbia">
-                    Sava Vuckovic (Nis, Serbia)
-                    </a>
-                </div>
+            <div class="alumni-description-links">
+                <div class="img-container">
+                    <img src="images/canda.png" alt="Canada flag">
+                    <div class="img-overlay">
+                        <a href="https://support.microverse.org/en/articles/2590022-what-do-alumni-think-of-microverse/#paul-rail-toronto-canada">
+                            Paul Rail (Toronto, Canada)
+                        </a>
+                    </div>
+                    </div>
+                <div class="img-container">
+                    <img src="./images/serbia.png" alt="Serbia flag">
+                    <div class="img-overlay">
+                        <a href="https://support.microverse.org/en/articles/2590022-what-do-alumni-think-of-microverse/#sava-vuckovic-nis-serbia">
+                        Sava Vuckovic (Nis, Serbia)
+                        </a>
+                    </div>
+            </div>
             </div>
         </section>
 
@@ -76,8 +112,8 @@
             </p>
         </section>
         <footer>
-            <img src="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30ae0c4081806a8f50a7df_horizontal-logo-white.png" width="169" sizes="(max-width: 479px) 66vw, 169px" srcset="https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30ae0c4081806a8f50a7df_horizontal-logo-white-p-500.png 500w, https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30ae0c4081806a8f50a7df_horizontal-logo-white-p-800.png 800w, https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30ae0c4081806a8f50a7df_horizontal-logo-white.png 1000w" alt="microverse logo" class="logo_footer">
-            <p>Talent is everywhere, but opportunity is not. Follow us on our journey to close the gap and connect one million people to remote jobs by 2030.</p>
+            <img src="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png" width="169" sizes="(max-width: 768px) 169px, 1200px" srcset="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png 768w, https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30ae0c4081806a8f50a7df_horizontal-logo-white.png 2000w" alt="microverse logo" class="logo_footer">
+            <p class="footer-description">Talent is everywhere, but opportunity is not. Follow us on our journey to close the gap and connect one million people to remote jobs by 2030.</p>
         </footer>
     </main>
 </body>

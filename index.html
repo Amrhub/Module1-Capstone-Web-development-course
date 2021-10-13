@@ -7,12 +7,46 @@
     <title>Microverse program</title>
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="shortcut icon" href="./images/microverse.png" type="image/x-icon">
+    <script defer src="scripts/logic.js"></script>
 </head>
 <body>
     <main class="container">
         <header class="container__header">
             <nav class="hamburger-menu">
-                <img src="images/hamburger-menu.png" alt="hamburger menu icon">
+                <img class="hamburger-img" src="images/hamburger-menu.png" alt="hamburger menu icon">
+                <ul class="collapse-list">
+                    <li>
+                        <img id="close-btn" class="close-sign" src="images/close.png" alt="close sign">
+                    </li>
+                    <li>
+                        <a href="#" id="home-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="/about.html" target="_blank" rel="noopener">About</a>
+                    </li>
+                    <li>
+                        <a href="/index.html#main-program" target="_blank" rel="noopener">Program</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="desktop-navbar">
+                <a href="/index.html">
+                    <img class="desktop-logo" src="images/microverselogo.png" alt="microverse logo">
+                </a>
+                    <ul>
+                        <li>
+                            <a href="#" class="active-tab">Home</a>
+                        </li>
+                        <li>
+                            <a href="/about.html">About</a>
+                        </li>
+                        <li>
+                            <a href="/index.html#main-program">Program</a>
+                        </li>
+                        <li>
+                            <a href="https://apply.microverse.org/" target="_blank" rel="noopener">Join</a>
+                        </li>
+                    </ul>
             </nav>
         </header>
         <section class="introduction">
@@ -30,7 +64,7 @@
             
         </section>
         
-        <section class="main-program">
+        <section class="main-program" id="main-program">
             <h3>
                 Main Program
             </h3>
@@ -58,11 +92,34 @@
                     <span class="card-title">Microverse Alumni</span>
                     <p class="card-description">See Microverse first graduated students opinion on their experience</p>
                 </div>
-                <a href="https://apply.microverse.org/" target="_blank" rel="noopener noreferrer" class="join-btn">
+                <a href="https://apply.microverse.org/" target="_blank" rel="noopener" class="join-btn" id="join-btn">
                 Apply now
                 </a>
             </div>
         </section>
+
+
+        <section class="partner">
+            <h3>
+                Partner
+            </h3>
+                <div>
+                    <img src="images/l2-logo.png" alt="L2 ventures logo">
+                    <img src="images/y-logo.png" alt="Y logo">
+                    <img src="images/hack-logo.png" alt="hack.vc logo">
+                    <img src="images/soma-logo.png" alt="Soma Capital logo">
+                    <img src="images/50y-logo.png" alt="50 Y logo">
+                    <img src="images/northzone-logo.png" alt="Northzone logo">
+                    <img src="images/gc-logo.png" alt="General Catalyst logo">
+                </div>
+            <p>
+                A big thank you to all of the partners, advisors, contractors, and contributors that help in so many ways to make Microverse great!
+            </p>
+        </section>
+        <footer>
+            <img src="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png" width="169" sizes="(max-width: 768px) 169px, 800px" srcset="https://zen-marketing-assets.s3-us-west-2.amazonaws.com/images/Microverselogo.png 768w, https://assets-global.website-files.com/5dbb30f00775d4c32191a4df/5e30ae0c4081806a8f50a7df_horizontal-logo-white.png 2000w" alt="microverse logo" class="logo_footer">
+            <p class="footer-description">Talent is everywhere, but opportunity is not. Follow us on our journey to close the gap and connect one million people to remote jobs by 2030.</p>
+        </footer>
     </main>
 </body>
 </html>
