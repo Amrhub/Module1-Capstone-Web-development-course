@@ -1,0 +1,144 @@
+@import '../_intialization';
+
+.introduction {
+  padding: 1rem;
+}
+
+.introduction__header {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.introduction__description-container {
+  border: 1px solid #d3d3d3;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+.contact-us-email {
+  text-align: center;
+  line-height: 1.875rem;
+  margin-top: 1rem;
+
+  .contact-us-link {
+    color: $secondary-color;
+  }
+}
+
+.alumni-opinion {
+  padding: 1rem;
+  border-top: #d3d3d3 1px solid;
+  background-color: white;
+
+  h3 {
+    font-family: $primary-font-family;
+    font-weight: bold;
+    position: relative;
+
+    @include underlineLength(20%,2px);
+  }
+
+  p {
+    margin: 1rem 0;
+    text-align: center;
+  }
+
+  .img-container {
+    position: relative;
+    margin: 1rem 1rem 2rem;
+
+    img {
+      width: 100%;
+    }
+
+    .img-overlay {
+      position: absolute;
+      background-color: rgba(62, 57, 107, 0.9);
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    a {
+      color: $offwhite-color;
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 30px;
+  }
+
+  .introduction {
+    padding: 1rem 0;
+
+    & > * {
+      max-width: 800px;
+      margin: 1rem auto;
+    }
+
+    .introduction__header {
+      font-size: 30px;
+      font-weight: normal;
+      position: relative;
+      margin-bottom: 2rem;
+
+      @include underlineLength(20px, 2px);
+    }
+
+    .introduction__description {
+      font-size: 18px;
+    }
+
+    .contact-us-email {
+      font-size: 20px;
+    }
+
+    a {
+      display: block;
+      max-width: max-content;
+      margin: 0 auto;
+    }
+  }
+
+  .alumni-opinion {
+    & > * {
+      max-width: 800px;
+      margin: 1.5rem auto;
+    }
+
+    .alumni-description {
+      font-size: 18px;
+      text-align: center;
+      margin: 1.5rem auto;
+    }
+  }
+
+  .alumni-description-links {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .img-container {
+    margin: 0 8px;
+    width: 100%;
+    display: inline-block;
+
+    a {
+      text-align: center;
+    }
+  }
+}

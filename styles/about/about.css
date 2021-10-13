@@ -1,0 +1,396 @@
+@import url("http://fonts.cdnfonts.com/css/cocogoose");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #272a31;
+}
+
+html {
+  background-color: #f5f5f5;
+  font-family: "Lato", sans-serif;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "COCOGOOSE", sans-serif;
+  text-align: center;
+}
+
+.container__header {
+  width: 100%;
+}
+
+.hamburger-menu,
+.desktop-navbar {
+  padding: 1rem 2rem;
+}
+
+.hamburger-menu .hamburger-img,
+.desktop-navbar .hamburger-img {
+  height: 45px;
+  font-size: 45px;
+}
+
+.hamburger-menu .hamburger-img:hover,
+.desktop-navbar .hamburger-img:hover {
+  cursor: pointer;
+}
+
+.collapse-list {
+  position: absolute;
+  list-style: none;
+  background-color: #272a31;
+  padding: 1rem 4rem;
+  transform: scale(0);
+  transition: transform 0.5s ease-in;
+  transform-origin: 0 0;
+}
+
+.collapse-list li {
+  margin: 2rem 0;
+  clear: both;
+  width: 90%;
+}
+
+.collapse-list .close-sign {
+  width: 25px;
+  float: right;
+}
+
+.collapse-list .close-sign:hover {
+  cursor: pointer;
+}
+
+.collapse-list a {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+.desktop-navbar {
+  background-color: white;
+  display: none;
+  grid-template-columns: 1fr 4fr;
+  padding: 16px 32px;
+}
+
+.desktop-navbar a {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+.desktop-navbar a .desktop-logo {
+  height: 30px;
+}
+
+.desktop-navbar ul {
+  list-style: none;
+  display: flex;
+  height: 100%;
+  width: 50%;
+  justify-content: space-around;
+  grid-column: 2/3;
+  margin: 0 auto;
+}
+
+.desktop-navbar ul li {
+  display: inline-flex;
+  align-items: center;
+  height: 100%;
+}
+
+.desktop-navbar ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.desktop-navbar ul li .active-tab {
+  color: #ec5242;
+}
+
+.partner {
+  background-color: #f8faff;
+  padding: 1rem;
+}
+
+.partner h3 {
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  position: relative;
+  width: max-content;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.partner h3::after {
+  content: '';
+  height: 2px;
+  width: 60%;
+  position: absolute;
+  background-color: #ec5242;
+  bottom: -0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.partner img {
+  height: 40px;
+  margin: 0 8px 8px 0;
+}
+
+.partner img:last-child {
+  height: 40px;
+  width: 140px;
+  margin: 0;
+}
+
+.partner p {
+  color: #7880a6;
+  text-align: center;
+}
+
+footer {
+  background-color: #d3d3d3;
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+footer .footer-description {
+  font-size: 18px;
+  display: inline-block;
+  text-align: left;
+  margin-left: 32px;
+}
+
+footer .desktop-footer__img {
+  display: none;
+}
+
+@media screen and (min-width: 500px) {
+  .collapse-list li {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container__header {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+  }
+
+  .hamburger-menu {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: grid;
+  }
+
+  .partner {
+    display: block;
+  }
+
+  .partner div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  footer {
+    display: flex;
+    background-color: #272a31;
+  }
+
+  footer .mobile-footer__img {
+    display: none;
+  }
+
+  footer .desktop-footer__img {
+    display: inline-block;
+  }
+
+  footer .footer-description {
+    color: #d3d3d3;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .desktop-navbar ul {
+    width: 70%;
+  }
+}
+
+.introduction {
+  padding: 1rem;
+}
+
+.introduction__header {
+  font-size: 30px;
+  letter-spacing: 3px;
+  color: #ec5242;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.introduction__description-container {
+  border: 1px solid #d3d3d3;
+  background-color: #f9f9f9;
+  padding: 1rem;
+  text-align: center;
+  word-spacing: 2px;
+}
+
+.contact-us-email {
+  text-align: center;
+  line-height: 1.875rem;
+  margin-top: 1rem;
+}
+
+.contact-us-email .contact-us-link {
+  color: #ec5242;
+}
+
+.alumni-opinion {
+  padding: 1rem;
+  border-top: #d3d3d3 1px solid;
+  background-color: white;
+}
+
+.alumni-opinion h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  position: relative;
+}
+
+.alumni-opinion h3::after {
+  content: '';
+  height: 2px;
+  width: 20%;
+  position: absolute;
+  background-color: #ec5242;
+  bottom: -0.5em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.alumni-opinion p {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.alumni-opinion .img-container {
+  position: relative;
+  margin: 1rem 1rem 2rem;
+}
+
+.alumni-opinion .img-container img {
+  width: 100%;
+}
+
+.alumni-opinion .img-container .img-overlay {
+  position: absolute;
+  background-color: rgba(62, 57, 107, 0.9);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alumni-opinion .img-container a {
+  color: #d3d3d3;
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 30px;
+  }
+
+  .introduction {
+    padding: 1rem 0;
+  }
+
+  .introduction > * {
+    max-width: 800px;
+    margin: 1rem auto;
+  }
+
+  .introduction .introduction__header {
+    font-size: 30px;
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+
+  .introduction .introduction__header::after {
+    content: '';
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    background-color: #ec5242;
+    bottom: -0.5em;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .introduction .introduction__description {
+    font-size: 18px;
+  }
+
+  .introduction .contact-us-email {
+    font-size: 20px;
+  }
+
+  .introduction a {
+    display: block;
+    max-width: max-content;
+    margin: 0 auto;
+  }
+
+  .alumni-opinion > * {
+    max-width: 800px;
+    margin: 1.5rem auto;
+  }
+
+  .alumni-opinion .alumni-description {
+    font-size: 18px;
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+
+  .alumni-description-links {
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+
+  .img-container {
+    margin: 0 8px;
+    width: 100%;
+    display: inline-block;
+  }
+
+  .img-container a {
+    text-align: center;
+  }
+}

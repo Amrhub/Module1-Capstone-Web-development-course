@@ -1,0 +1,235 @@
+@import 'intialization';
+
+.introduction {
+  padding: 1rem 1rem 0 1rem;
+}
+
+.introduction__header {
+  font-size: 25px;
+  letter-spacing: 3px;
+  color: $secondary-color;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.introduction__description-container {
+  border: 4px solid white;
+  background-color: #f9f9f9;
+  padding: 1rem;
+}
+
+.introduction__description {
+  font-size: 16px;
+}
+
+.event-date {
+  color: #4b4b4b;
+  margin: 1rem 0;
+  font-size: 24px;
+  text-align: left;
+}
+
+.main-program {
+  background-color: rgb(39, 42, 49);
+  padding: 2rem 1rem 1rem;
+
+  h3 {
+    font-family: $primary-font-family;
+    width: max-content;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1px;
+    position: relative;
+
+    @include underlineLength(30%);
+  }
+}
+
+.main-program__container {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  .card {
+    background-color: rgba(59, 62, 69, 0.4);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 18%;
+    padding: 1rem;
+
+    img {
+      width: 1.875rem;
+      flex-basis: auto;
+    }
+
+    & > * {
+      margin: 0 3px;
+    }
+
+    .card-title {
+      color: $secondary-color;
+      font-family: $heading-font-family;
+      text-align: center;
+      flex-basis: 110px;
+      flex-grow: 2;
+      font-size: 16px;
+    }
+
+    .card-description {
+      font-size: 15px;
+      color: $offwhite-color;
+      flex-basis: 140px;
+    }
+  }
+
+  .join-btn {
+    text-decoration: none;
+    color: $offwhite-color;
+    background-color: $secondary-color;
+    font-weight: 700;
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+  }
+}
+
+.staff {
+  padding: 1rem;
+  background-color: #fff;
+
+  .staff__headings {
+    font-weight: normal;
+    position: relative;
+    margin-bottom: 4rem;
+
+    @include underlineLength(50px, 2px);
+  }
+
+  .staff-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .staff-container {
+    display: grid;
+    grid-template-columns: 3fr 6fr;
+    gap: 1rem 2rem;
+
+    .staff-information {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-end;
+
+      img {
+        width: 80%;
+      }
+    }
+  }
+
+  .staff-introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    .staff-name {
+      font-weight: normal;
+      font-size: 17px;
+      text-align: left;
+    }
+
+    .job-title {
+      text-transform: capitalize;
+      color: $secondary-color;
+      position: relative;
+      margin-bottom: 8px;
+
+      &::before {
+        content: '';
+        height: 2px;
+        width: 30px;
+        position: absolute;
+        bottom: -8px;
+        left: 0;
+        background-color: $offwhite-color;
+      }
+    }
+
+    .bio {
+      font-size: 16px;
+    }
+  }
+}
+
+.partner {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 30px;
+  }
+
+  .introduction {
+    max-width: 800px;
+    padding: 4rem 3rem;
+
+    h1 {
+      font-size: 45px;
+      line-height: 50px;
+      font-weight: normal;
+    }
+  }
+
+  .main-program {
+    .main-program__container {
+      flex-direction: row;
+      height: 50vh;
+      width: 90%;
+      margin: 0 auto;
+      justify-content: space-around;
+    }
+
+    .card {
+      flex-direction: column;
+      height: 12em;
+      justify-content: space-around;
+      flex-grow: 1;
+      margin-right: 8px;
+      flex-basis: 100px;
+
+      .card-title {
+        flex: 1 0 100px;
+        display: inline-flex;
+        align-items: center;
+        text-align: center;
+      }
+
+      .card-description {
+        text-align: center;
+        display: inline-flex;
+        align-items: center;
+      }
+    }
+
+    .join-btn {
+      display: none;
+    }
+  }
+
+  .staff {
+    padding: 2rem 4rem;
+  }
+
+  .staff-container-wrapper.staff-container-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
