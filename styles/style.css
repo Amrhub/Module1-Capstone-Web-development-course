@@ -29,6 +29,36 @@ h5 {
   width: 100%;
 }
 
+.top-nav {
+  display: none;
+  background-color: #3e3e3e;
+  height: 25px;
+  padding-right: 8rem;
+}
+
+.top-nav ul {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.top-nav ul > * > *,
+.top-nav ul > * {
+  color: #d3d3d3;
+  font-size: 11px;
+  text-decoration: none;
+  font-weight: 900;
+  text-shadow: 0.2px 0 #272a31;
+  padding-left: 7px;
+  margin-top: 3px;
+  letter-spacing: 1px;
+}
+
+.top-nav ul > :first-child {
+  margin-left: auto;
+}
+
 .hamburger-menu,
 .desktop-navbar {
   padding: 1rem 2rem;
@@ -79,7 +109,7 @@ h5 {
   background-color: white;
   display: none;
   grid-template-columns: 1fr 4fr;
-  padding: 16px 32px;
+  padding: 16px 3rem;
 }
 
 .desktop-navbar a {
@@ -96,22 +126,47 @@ h5 {
   list-style: none;
   display: flex;
   height: 100%;
-  width: 50%;
-  justify-content: space-around;
   grid-column: 2/3;
-  margin: 0 auto;
+  margin-left: auto;
 }
 
 .desktop-navbar ul li {
   display: inline-flex;
   align-items: center;
   height: 100%;
+  margin-left: 3rem;
 }
 
-.desktop-navbar ul li a {
+.desktop-navbar ul li > * {
   text-decoration: none;
   font-weight: bold;
   font-size: 18px;
+  width: 100%;
+  height: 100%;
+}
+
+.desktop-navbar ul li:last-of-type {
+  border: 3px #ec5242 solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+}
+
+.desktop-navbar ul li:last-of-type > * {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.desktop-navbar ul li:last-of-type:hover {
+  background-color: #ec5242;
+}
+
+.desktop-navbar ul li:last-of-type:hover > * {
+  color: #d3d3d3;
 }
 
 .desktop-navbar ul li .active-tab {
@@ -119,7 +174,7 @@ h5 {
 }
 
 .partner {
-  background-color: #f8faff;
+  background-color: #414246;
   padding: 1rem;
 }
 
@@ -127,6 +182,9 @@ h5 {
   font-family: "Lato", sans-serif;
   font-size: 20px;
   position: relative;
+  font-weight: 900;
+  color: #a1a1a1;
+  text-shadow: 0.4px 0 #a1a1a1;
   width: max-content;
   margin: 0 auto;
   margin-bottom: 2rem;
@@ -134,8 +192,8 @@ h5 {
 
 .partner h3::after {
   content: '';
-  height: 2px;
-  width: 60%;
+  height: 1px;
+  width: 50%;
   position: absolute;
   background-color: #ec5242;
   bottom: -0.5em;
@@ -155,7 +213,8 @@ h5 {
 }
 
 .partner p {
-  color: #7880a6;
+  color: #a1a1a1;
+  text-shadow: 0.4px 0 #a1a1a1;
   text-align: center;
 }
 
@@ -186,10 +245,13 @@ footer .desktop-footer__img {
 }
 
 @media screen and (min-width: 768px) {
-  .container__header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
+  .top-nav {
+    display: block;
+  }
+
+  .desktop-navbar-container {
+    width: 100%;
+    background-color: #fff;
   }
 
   .hamburger-menu {
@@ -198,10 +260,15 @@ footer .desktop-footer__img {
 
   .desktop-navbar {
     display: grid;
+    padding-right: 8rem;
   }
 
   .partner {
     display: block;
+  }
+
+  .partner h3 {
+    padding-bottom: 8px;
   }
 
   .partner div {
@@ -231,22 +298,34 @@ footer .desktop-footer__img {
 }
 
 @media screen and (max-width: 1100px) {
-  .desktop-navbar ul {
-    width: 70%;
+  .top-nav,
+  .desktop-navbar {
+    padding-right: 1rem;
   }
 }
 
 .introduction {
   padding: 1rem 1rem 0 1rem;
+  background-image: url("../images/introduction-bg.png");
+}
+
+.hello-msg.hello-msg {
+  display: block;
+  color: #ec5242;
+  font-size: 24px;
+  margin-bottom: 12px;
 }
 
 .introduction__header {
-  font-size: 25px;
+  font-size: 40px;
   letter-spacing: 3px;
   color: #ec5242;
   text-transform: uppercase;
   margin-bottom: 1rem;
   text-align: left;
+  background-image: url("../images/text-bg.jpg");
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .introduction__description-container {
@@ -261,14 +340,24 @@ footer .desktop-footer__img {
 
 .event-date {
   color: #4b4b4b;
-  margin: 1rem 0;
-  font-size: 24px;
+  margin: 1rem 0 0;
+  font-size: 32px;
+  font-weight: 900;
+  font-family: "Lato", sans-serif;
   text-align: left;
 }
 
+.event-location {
+  display: block;
+  color: #4b4b4b;
+  font-size: 15px;
+  margin: 16px 0;
+}
+
 .main-program {
-  background-color: #272a31;
+  margin: 0 auto;
   padding: 2rem 1rem 1rem;
+  background-image: url("../images/main-program-banner.png");
 }
 
 .main-program h3 {
@@ -316,10 +405,6 @@ footer .desktop-footer__img {
   flex-basis: auto;
 }
 
-.main-program__container .card > * {
-  margin: 0 3px;
-}
-
 .main-program__container .card .card-title {
   color: #ec5242;
   font-family: "COCOGOOSE", sans-serif;
@@ -333,6 +418,10 @@ footer .desktop-footer__img {
   font-size: 15px;
   color: #d3d3d3;
   flex-basis: 140px;
+}
+
+.main-program__container .desktop-see-program {
+  display: none;
 }
 
 .main-program__container .join-btn {
@@ -428,44 +517,72 @@ footer .desktop-footer__img {
   }
 
   .introduction {
-    max-width: 800px;
-    padding: 4rem 3rem;
+    padding: 2rem 3rem;
+  }
+
+  .introduction .introduction__description-container,
+  .introduction .event-date,
+  .introduction .event-location {
+    max-width: 700px;
+  }
+
+  .introduction .hello-msg.hello-msg {
+    color: #ec5242;
+    font-size: 40px;
+    margin-bottom: 10px;
   }
 
   .introduction h1 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 65px;
+    line-height: 70px;
     font-weight: normal;
+    max-width: 1000px;
+  }
+
+  .main-program {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
   }
 
   .main-program .main-program__container {
     flex-direction: row;
-    height: 50vh;
-    width: 90%;
+    height: 45vh;
+    width: 70%;
     margin: 0 auto;
     justify-content: space-around;
   }
 
   .main-program .card {
     flex-direction: column;
-    height: 12em;
     justify-content: space-around;
-    flex-grow: 1;
-    margin-right: 8px;
-    flex-basis: 100px;
+    margin-right: 10px;
+    height: 230px;
+    gap: 12px;
   }
 
   .main-program .card .card-title {
-    flex: 1 0 100px;
+    flex-basis: auto;
+    flex-grow: 0;
     display: inline-flex;
     align-items: center;
     text-align: center;
   }
 
   .main-program .card .card-description {
+    flex-basis: 80px;
+    flex-grow: 0;
     text-align: center;
     display: inline-flex;
-    align-items: center;
+    align-items: flex-start;
+  }
+
+  .main-program .desktop-see-program {
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 auto;
   }
 
   .main-program .join-btn {

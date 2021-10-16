@@ -2,6 +2,8 @@
 
 .introduction {
   padding: 1rem;
+  background-image: url("../../images/about-banner.png");
+  background-position: top 90% left 0%;
 }
 
 .introduction__header {
@@ -27,6 +29,53 @@
 
   .contact-us-link {
     color: $secondary-color;
+  }
+}
+
+.logo {
+  padding: 1rem;
+  border-top: #d3d3d3 1px solid;
+  background-color: #fff;
+
+  h2 {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: $primary-font-family;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 8px;
+
+    @include underlineLength(30px, 1px);
+  }
+
+  .desktop-logo-description {
+    display: none;
+  }
+
+  .mobile-logo-description {
+    color: #979797;
+    margin: 0 6px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .logo_img-container {
+    border: #d3d3d3 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+    padding: 1rem;
+
+    span {
+      display: inline-block;
+      width: 300px;
+      font-size: 11px;
+      text-align: right;
+      padding-right: 60px;
+      transform: translateY(-12px);
+    }
   }
 }
 
@@ -58,7 +107,7 @@
 
     .img-overlay {
       position: absolute;
-      background-color: rgba(62, 57, 107, 0.9);
+      background-color: rgba(236, 82, 66, 0.7);
       top: 0;
       left: 0;
       width: 100%;
@@ -89,8 +138,8 @@
     }
 
     .introduction__header {
-      font-size: 30px;
-      font-weight: normal;
+      font-size: 40px;
+      font-weight: 900;
       position: relative;
       margin-bottom: 2rem;
 
@@ -110,6 +159,24 @@
       max-width: max-content;
       margin: 0 auto;
     }
+  }
+
+  .desktop-logo-description.desktop-logo-description {
+    display: block;
+    margin: 0 auto;
+    font-size: 14px;
+    text-align: center;
+    font-weight: 400;
+    max-width: 600px;
+  }
+
+  .mobile-logo-description {
+    display: none;
+  }
+
+  .logo_img-container {
+    max-width: 500px;
+    margin: 0 auto;
   }
 
   .alumni-opinion {
