@@ -13,6 +13,29 @@
 <body>
     <main class="container">
         <header class="container__header">
+            <nav class="top-nav">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="images/fb-logo.png" alt="facebook logo" width="8">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="images/tw-logo.png" alt="twitter logo" width="19">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">Arabic</a>
+                    </li>
+                    <li>
+                        <a href="#">My page</a>
+                    </li>
+                    <li>
+                        <a href="#">Logout</a>
+                    </li>
+                </ul>
+            </nav>
             <nav class="hamburger-menu">
                 <img class="hamburger-img" src="images/hamburger-menu.png" alt="hamburger menu icon">
                 <ul class="collapse-list">
@@ -23,34 +46,39 @@
                         <a href="#" id="home-link">Home</a>
                     </li>
                     <li>
-                        <a href="about.html" target="_blank" rel="noopener">About</a>
+                        <a href="about.html">About</a>
                     </li>
                     <li>
                         <a href="#main-program">Program</a>
                     </li>
                 </ul>
             </nav>
-            <nav class="desktop-navbar">
-                <a href="#">
-                    <img class="desktop-logo" src="images/microverselogo.png" alt="microverse logo">
-                </a>
-                    <ul>
-                        <li>
-                            <a href="#" class="active-tab">Home</a>
-                        </li>
-                        <li>
-                            <a href="about.html">About</a>
-                        </li>
-                        <li>
-                            <a href="index.html#main-program">Program</a>
-                        </li>
-                        <li>
-                            <a href="https://apply.microverse.org/" target="_blank" rel="noopener">Join</a>
-                        </li>
-                    </ul>
+            <nav class="desktop-navbar-container">
+                <div class="desktop-navbar">
+                    <a href="#">
+                        <img class="desktop-logo" src="images/microverselogo.png" alt="microverse logo">
+                    </a>
+                        <ul>
+                            <li>
+                                <a href="#" class="active-tab">Home</a>
+                            </li>
+                            <li>
+                                <a href="index.html#main-program">Program</a>
+                            </li>
+                            <li>
+                                <a href="about.html">About</a>
+                            </li>
+                            <li>
+                                <a href="https://apply.microverse.org/" target="_blank" rel="noopener">Join</a>
+                            </li>
+                        </ul>
+                </div>
             </nav>
         </header>
         <section class="introduction">
+            <span class= "hello-msg">
+                "Hello! Sharing world"
+            </span>
             <h1 class="introduction__header">
                 Microverse Full-Stack web development program
             </h1>
@@ -62,6 +90,9 @@
             <h2 class="event-date">
                 October class: 2021.11.18 (MON) 
             </h2>
+            <span class="event-location">
+                @ Microverse program online course
+            </span>
             
         </section>
         
@@ -90,13 +121,14 @@
 
                 <div class="card">
                     <img src="images/alumni.png" alt="3 men standing in front of a school">
-                    <span class="card-title">Microverse Alumni</span>
-                    <p class="card-description">See Microverse first graduated students opinion on their experience</p>
+                    <span class="card-title">Alumni</span>
+                    <p class="card-description">See Microverse's first cohort alumni' opinion</p>
                 </div>
                 <a href="https://apply.microverse.org/" target="_blank" rel="noopener" class="join-btn" id="join-btn">
                 Apply now
                 </a>
             </div>
+            <a href="#" class="desktop-see-program">see the whole program</a>
         </section>
 
         <section class="staff">
@@ -104,47 +136,7 @@
                 Microverse Staff
             </h2>
             <div class="staff-container-wrapper">
-                <!-- <div class="staff-container">
-                    <div class="staff-information">
-                        <img src="images/Ariel-Camus.png" alt="hwasd">
-                    </div>
-                    <div class="staff-introduction">
-                        <h4 class="staff-name">Ariel Camus</h4>
-                        <span class="job-title">CEO</span>
-                        <p class="bio">HERE</p>
-                    </div>
-                </div>
-                <div class="staff-container">
-                    <div class="staff-information">
-                        <img src="images/Ariel-Camus.png" alt="hwasd">
-                    </div>
-                    <div class="staff-introduction">
-                        <h4 class="staff-name">Ariel Camus</h4>
-                        <span class="job-title">CEO</span>
-                        <p class="bio">HERE</p>
-                    </div>
-                </div>
-                <div class="staff-container">
-                    <div class="staff-information">
-                        <img src="images/Ariel-Camus.png" alt="hwasd">
-                    </div>
-                    <div class="staff-introduction">
-                        <h4 class="staff-name">Ariel Camus</h4>
-                        <span class="job-title">CEO</span>
-                        <p class="bio">HERE</p>
-                    </div>
-                </div>
-                <div class="staff-container">
-                    <div class="staff-information">
-                        <img src="images/Ariel-Camus.png" alt="hwasd">
-                    </div>
-                    <div class="staff-introduction">
-                        <h4 class="staff-name">Ariel Camus</h4>
-                        <span class="job-title">CEO</span>
-                        <p class="bio">HERE</p>
-                    </div>
-                </div>
-                 -->
+            
             </div>
         </section>
 
