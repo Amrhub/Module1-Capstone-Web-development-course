@@ -28,6 +28,20 @@ const staff = [
     job: 'Admissions',
     bio: 'Gaby is a native Salvadoran, Spanglish-speaking, dog (and sushi) lover. Her background is in managerial consulting for large tech companies, but her professional passion lies in helping companies with strong social missions solve complex problems.',
   },
+  {
+    picture: 'images/Geogory-Barrett.png',
+    alt: 'picture of Geogory Barrett',
+    name: 'Geogory Barrett',
+    job: 'Operations',
+    bio: "Greg is a lover of travel and has lived in Asia, North America and his native Europe. His background is in technology and education and he is passionate about working remotely. Outside of work, you'll find him in a garden center buying more plants for the small jungle he is growing on his balcony.",
+  },
+  {
+    picture: 'images/Nicolas-Kneler.png',
+    alt: 'picture of Nicolas Kneler',
+    name: 'Nicolas Kneler',
+    job: 'Admissions',
+    bio: "Born and raised in Argentina, Nico developed a music collaboration platform right after college and has been designing product strategies for startups ever since. When not working you'll find him walking about or looking for original furniture in flea markets.",
+  },
 ];
 
 const staffContainerWrapper = document.querySelector(
@@ -35,7 +49,7 @@ const staffContainerWrapper = document.querySelector(
 );
 
 function addStaffMember(staffMember) {
-  const staffContainer = document.createElement('div');
+  const staffContainer = document.createElement('article');
   const staffInformation = document.createElement('div');
   const profilePicture = document.createElement('img');
   const staffIntroduction = document.createElement('div');
